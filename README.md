@@ -47,6 +47,18 @@ dependencies: [
 ]
 ```
 
+## 📋 Roadmap
+
+| Milestone | Status | Target |
+|-----------|--------|--------|
+| v1.0 Core Packages | 🚧 In Progress | Q2 2026 |
+| CLI Tooling | 🚧 In Progress | Q2 2026 |
+| CI/CD & Automation | 📋 Planned | Q3 2026 |
+| Documentation Site | 📋 Planned | Post v1.0 |
+| Community Templates | 📋 Planned | Post v1.0 |
+
+> 📝 **Note**: A dedicated documentation website will be built after v1.0 stable release. Until then, all docs live in repo READMEs and GitHub Discussions.
+
 ## 🤝 Contributing
 
 We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md) to get started.
