@@ -49,3 +49,7 @@ All packages are released under the MIT License.
 <p align="center">
   <sub>Built with ⚡ by developers, for developers.</sub>
 </p>
+
+## 🗺️ Roadmap
+
+See [ROADMAP.md](https://github.com/swiftanvil/swiftanvil-cli/blob/main/ROADMAP.md) for the full project roadmap, architecture decisions, and what's coming next.
