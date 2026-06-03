@@ -52,4 +52,4 @@ All packages are released under the MIT License.
 
 ## 🗺️ Roadmap
 
-See [ROADMAP.md](https://github.com/swiftanvil/swiftanvil-cli/blob/main/ROADMAP.md) for the full project roadmap, architecture decisions, and what's coming next.
+See `roadmap.org` in `swiftanvil-meta` for the full project roadmap, architecture decisions, and what's coming next.

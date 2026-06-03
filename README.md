@@ -61,7 +61,7 @@ dependencies: [
 
 ## 🤝 Contributing
 
-We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md) to get started.
+We welcome contributions. See `org.contributing` to get started.
 
 ## 📜 License
 
