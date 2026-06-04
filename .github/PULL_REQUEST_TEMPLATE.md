@@ -12,6 +12,13 @@
 - [ ] `swift test` passes
 - [ ] New tests added for new functionality
 
+## Review Provenance
+
+| Phase | Reviewer | Model | Verdict | Rounds | Key Findings |
+|-------|----------|-------|---------|--------|--------------|
+| Plan |  |  |  |  |  |
+| Impl |  |  |  |  |  |
+
 ## Checklist
 
 - [ ] Code follows Swift API Design Guidelines
