@@ -10,21 +10,48 @@ jobs:
   test-macos:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
+      - name: Check for Swift package
+        id: package
+        run: |
+          if [ -f Package.swift ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Select Xcode
+        if: steps.package.outputs.present == 'true'
         run: sudo xcode-select -s /Applications/Xcode_16.app/Contents/Developer
       - name: Build
+        if: steps.package.outputs.present == 'true'
         run: swift build
       - name: Test
+        if: steps.package.outputs.present == 'true'
         run: swift test
+      - name: Skip Swift CI
+        if: steps.package.outputs.present != 'true'
+        run: echo "No Package.swift found; skipping Swift build/test."
 
   test-linux:
     runs-on: ubuntu-latest
     container:
       image: swift:6.0
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
+      - name: Check for Swift package
+        id: package
+        run: |
+          if [ -f Package.swift ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Build
+        if: steps.package.outputs.present == 'true'
         run: swift build
       - name: Test
+        if: steps.package.outputs.present == 'true'
         run: swift test
+      - name: Skip Swift CI
+        if: steps.package.outputs.present != 'true'
+        run: echo "No Package.swift found; skipping Swift build/test."
